@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .container{
@@ -17,12 +18,14 @@
   grid-template-columns: .25fr 1fr .75fr;
   grid-row: 2/2;
   grid-column:2/-1;
+  background-color: yellow;
   
 }
 
 .profile-icon{
   grid-column: 1/1; 
   padding: 25px;
+  background-color: green;
 }
 
 .greeting{
@@ -42,12 +45,12 @@
 .admin-file-menu li{
   padding: 5px;
   padding-top: 20px;
+  background-color: red;
 }
 /* header */
 
 
 /*sidebar menu*/
-
 .sidebar {
   grid-column: 1 / 2;
   grid-row: 1 / -1; /* Span from the first to the last row */
@@ -55,7 +58,6 @@
   padding: 20px;
   color: white; /* Adjust color to match your theme */
 }
-
 /*sidebar menu*/
 
 /* top search*/
@@ -72,13 +74,85 @@
 .search-icon{
   align-self: center;
   padding-left: 25px;
+  background-color: green;
 }
 .profile{
   align-self: center;
+  background-color: yellow;
 }
 /*search*/
 
+/* main content */
 .main-content{
-  gap: 15px;
-  grid-column: 2
+  display:grid;
+  grid-template-rows: .25fr 4fr;
+  background-color:green;
+}
+.main-header{
+  padding: 25px;
+  background-color: yellowgreen;
+}
+
+.content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 100px;
+  padding: 25px;
+}
+.card{
+  display: grid;
+  grid-template-rows: .5fr 1fr .25fr;
+  background-color: aqua;
+  padding: 25px;
+}
+.card-footer ul{
+  display:grid;
+  gap: 10px;
+  grid-template-columns: .25fr .25fr .25fr;
+  padding-left: 175px;
+  list-style-type: none;
+}
+/*main content */
+
+/*other sidebar*/
+.other-sidebar{
+  display: grid;
+  grid-template-rows: .1fr .1fr;
+  gap: 25px;
+  background-color: yellow;
+  padding: 10px;
+}
+.announcements{
+  display: grid;
+  grid-template-rows: .05fr 1fr;
+  background-color: blue;
+}
+.announcements_content{
+  display:grid;
+  grid-template-rows:1fr 1fr 1fr;
+  gap: 10px;
+}
+.trending{
+  display: grid;
+  grid-template-rows: .1fr 1fr;
+  grid-row: 2;
+  background-color: red;
+}
+.trending_content{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+  padding: 25px;
+}
+.user-card{
+  display: grid;
+  grid-template-columns: 1fr .5fr;
+  gap: 5px;
+}
+
+.user-card-description{
+  grid-column: 1/-1;
+  font-size: 10px;
+  
 }
