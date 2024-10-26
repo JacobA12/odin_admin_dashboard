@@ -59,17 +59,19 @@
 /*sidebar menu*/
 
 /* top search*/
-.search-bar {
+.search-bar-header {
   display: grid;
   grid-row: 1 / 1;
   grid-column: 2 / -1;
   grid-template-columns: .5fr 4fr .25fr .25fr .5fr;
   gap: 10px; /* Adjust as needed */
-  text-align: center;
 }
-
+.search-bar{
+  background-color: gray;
+}
 .search-icon{
   align-self: center;
+  padding-left: 25px;
 }
 .profile{
   align-self: center;
